@@ -143,20 +143,20 @@ RCT_REMAP_METHOD(startRecording, resolve:(RCTPromiseResolveBlock)resolve rejecte
                                         break;
                                     case RPSampleBufferTypeAudioApp:
                                         if (self.audioInput.isReadyForMoreMediaData) {
-                                            if(self.enableMic){
+                                            // if(self.enableMic){
                                                 [self.audioInput appendSampleBuffer:sampleBuffer];
-                                            } else {
-                                                [self muteAudioInBuffer:sampleBuffer];
-                                            }
+                                            // } else {
+                                            //     [self muteAudioInBuffer:sampleBuffer];
+                                            // }
                                         }
                                         break;
                                     case RPSampleBufferTypeAudioMic:
                                         if (self.micInput.isReadyForMoreMediaData) {
-                                            if(self.enableMic){
-                                                [self.micInput appendSampleBuffer:sampleBuffer];
-                                            } else {
-                                                [self muteAudioInBuffer:sampleBuffer];
-                                            }
+                                            // if(self.enableMic){
+                                            //     [self.micInput appendSampleBuffer:sampleBuffer];
+                                            // } else {
+                                            //     [self muteAudioInBuffer:sampleBuffer];
+                                            // }
                                         }
                                         break;
                                     default:

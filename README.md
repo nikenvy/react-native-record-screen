@@ -1,5 +1,9 @@
 # react-native-record-screen
 
+This is a fork with minor fixes:
+
+- app screen mp4 record with clean audio track with no mic
+
 A screen record module for React Native.
 
 - Support iOS >= 11.0 (Simulator is not work)
